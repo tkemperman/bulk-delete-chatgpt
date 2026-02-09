@@ -30,13 +30,3 @@ This is a personal fork. To use it, build and sign the extension yourself:
 2. Click the extension icon in your browser toolbar
 3. Use **Add Checkboxes** to select specific conversations, then **Bulk Delete** or **Bulk Archive**
 4. Or use **Auto Bulk Delete** to automatically delete all non-project chats
-
-## Screenshot
-
-<table>
-  <tr>
-    <td><img src="./assets/1.jpg" alt="Screenshot 1" style="max-width: 100%;"></td>
-    <td><img src="./assets/2.jpg" alt="Screenshot 2" style="max-width: 100%;"></td>
-    <td><img src="./assets/3.jpg" alt="Screenshot 3" style="max-width: 100%;"></td>
-  </tr>
-</table>
