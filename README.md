@@ -16,7 +16,7 @@ A Firefox browser extension to bulk delete and archive conversations on ChatGPT.
 This is a personal fork. To use it, build and sign the extension yourself:
 
 ### Firefox
-1. `zip -r extension.zip . -x ".git/*" ".idea/*" ".claude/*" "manifest.chrome.json" "CLAUDE.md" "CHANGELOG.md" "README.md" "assets/*" ".gitignore"`
+1. `zip -r extension.zip . -x ".git/*" ".idea/*" ".claude/*" "manifest.chrome.json" "CLAUDE.md" "CHANGELOG.md" "README.md" ".gitignore"`
 2. Upload at [addons.mozilla.org/developers](https://addons.mozilla.org/en-US/developers/addons) → Upload New Version (self-distribution)
 3. Install the signed `.xpi`
 
