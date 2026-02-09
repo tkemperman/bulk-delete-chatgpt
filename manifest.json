@@ -12,6 +12,11 @@
     "default_title": "Bulk Delete Conversations"
   },
   "permissions": ["scripting", "activeTab", "storage"],
+  "commands": {
+    "auto-bulk-delete": {
+      "description": "Auto Bulk Delete all non-project chats"
+    }
+  },
   "background": {
     "scripts": ["background.js"]
   },
