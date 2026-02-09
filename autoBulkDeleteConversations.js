@@ -34,7 +34,7 @@
     // Reset button immediately
     chrome.runtime.sendMessage({
       action: "resetButton",
-      buttonId: BUTTON_IDS.BULK_DELETE_ALL
+      buttonId: BUTTON_IDS.AUTO_BULK_DELETE
     });
     return;
   }
@@ -134,7 +134,7 @@
       }
 
       const progress = Math.round(((i + 1) / conversations.length) * 100);
-      ChromeUtils.sendProgress(BUTTON_IDS.BULK_DELETE_ALL, progress);
+      ChromeUtils.sendProgress(BUTTON_IDS.AUTO_BULK_DELETE, progress);
     }
 
     utils.log('log', `Deletion batch completed: ${processedCount} deleted, ${skippedCount} skipped`);
@@ -202,7 +202,7 @@
   function updateButtonText(text) {
     chrome.runtime.sendMessage({
       action: "updateButtonText",
-      buttonId: BUTTON_IDS.BULK_DELETE_ALL,
+      buttonId: BUTTON_IDS.AUTO_BULK_DELETE,
       text: text
     });
   }
@@ -293,7 +293,7 @@
       utils.log('log', `Iterations: ${iteration}`);
 
       // Send completion signal
-      ChromeUtils.sendComplete(BUTTON_IDS.BULK_DELETE_ALL);
+      ChromeUtils.sendComplete(BUTTON_IDS.AUTO_BULK_DELETE);
 
       return { success: !wasCancelled, totalDeleted, iterations: iteration, cancelled: wasCancelled };
     });
@@ -312,7 +312,7 @@
       }
 
       // Send completion signal even on error
-      ChromeUtils.sendComplete(BUTTON_IDS.BULK_DELETE_ALL);
+      ChromeUtils.sendComplete(BUTTON_IDS.AUTO_BULK_DELETE);
     }
   })();
 

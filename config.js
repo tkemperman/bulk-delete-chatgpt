@@ -137,7 +137,7 @@ if (typeof window.configLoaded === "undefined") {
   const BUTTON_IDS = {
     BULK_DELETE: "bulk-delete",
     BULK_ARCHIVE: "bulk-archive",
-    BULK_DELETE_ALL: "auto-bulk-delete",
+    AUTO_BULK_DELETE: "auto-bulk-delete",
     ADD_CHECKBOXES: "add-checkboxes",
     TOGGLE_CHECKBOXES: "toggle-checkboxes",
     REMOVE_CHECKBOXES: "remove-checkboxes"
