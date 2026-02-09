@@ -12,7 +12,6 @@
     "default_title": "Bulk Delete Conversations"
   },
   "permissions": ["scripting", "activeTab", "storage"],
-  "host_permissions": ["https://bulk-delete-chatgpt-worker.qcrao.com/*"],
   "background": {
     "scripts": ["background.js"]
   },

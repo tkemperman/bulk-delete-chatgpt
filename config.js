@@ -3,17 +3,6 @@ if (typeof window.configLoaded === "undefined") {
 
   window.configLoaded = true;
 
-  // API Configuration
-  const API_CONFIG = {
-    BASE_URL: "https://bulk-delete-chatgpt-worker.qcrao.com",
-    ENDPOINTS: {
-      SEND_EVENT: "/send-event",
-      CHECK_PAYMENT: "/check-payment-status",
-      PAY_BULK_ARCHIVE: "/pay-bulk-archive"
-    },
-    TIMEOUT: 10000
-  };
-
   // UI Configuration
   const UI_CONFIG = {
     DELAYS: {
@@ -120,13 +109,6 @@ if (typeof window.configLoaded === "undefined") {
     }
   };
 
-  // Storage Configuration
-  const STORAGE_CONFIG = {
-    KEYS: {
-      IS_PAID: "BulkDeleteChatGPT_isPaid"
-    }
-  };
-
   // CSS Classes
   const CSS_CLASSES = {
     CHECKBOX: "conversation-checkbox",
@@ -143,19 +125,10 @@ if (typeof window.configLoaded === "undefined") {
     REMOVE_CHECKBOXES: "remove-checkboxes"
   };
 
-  // Events
-  const EVENTS = {
-    DELETE: "delete",
-    ARCHIVE: "archive"
-  };
-
   // Export to global scope
-  window.API_CONFIG = API_CONFIG;
   window.UI_CONFIG = UI_CONFIG;
-  window.STORAGE_CONFIG = STORAGE_CONFIG;
   window.CSS_CLASSES = CSS_CLASSES;
   window.BUTTON_IDS = BUTTON_IDS;
-  window.EVENTS = EVENTS;
 
   // For backward compatibility
   window.Selectors = UI_CONFIG.SELECTORS;
