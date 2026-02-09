@@ -52,6 +52,7 @@
         
         if (!selectedConversations || selectedConversations.length === 0) {
           utils.log('log', 'No conversations selected for deletion');
+          ChromeUtils.sendComplete(BUTTON_IDS.BULK_DELETE);
           return { success: true, processed: 0, message: 'No conversations selected' };
         }
 
